@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: #e0e0e0;
+    display: flex;
+    border-bottom: 3px solid;
+}
+
+h1 {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.tabs span {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.tabs span:hover,
+.tabs .active {
+    background: #ffffff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 100vh;
+}

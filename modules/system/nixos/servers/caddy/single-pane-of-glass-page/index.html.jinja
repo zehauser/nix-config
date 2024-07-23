@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>{{ machineName }}</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>{{ machineName }}</h1>
+        <div class="tabs">
+            {% for service in services %}
+            <span data-target="content-{{ service.friendlyName }}" {% if loop.index0 == 0 %} class="initial-active" {% endif %}>
+                {{ service.friendlyName }}
+            </span>
+            {% endfor %}
+        </div>
+    </header>
+    {% for service in services %}
+    <div id="content-{{ service.friendlyName }}" class="tab-content">
+        <iframe src="{{ service.publicAddress }}"></iframe>
+    </div>
+    {% endfor %}
+</body>
+
+</html>
