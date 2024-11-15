@@ -10,7 +10,6 @@ helpers.mkCrossPlatformModule {
       experimental-features = [
         "nix-command"
         "flakes"
-        "repl-flake"
       ];
     };
   };

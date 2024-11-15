@@ -23,7 +23,7 @@ let
 in
 {
   boot.initrd.systemd.enable = true;
-  boot.initrd.systemd.enableTpm2 = false;
+  boot.initrd.systemd.tpm2.enable = false;
 
   boot.initrd.systemd.services.wipeRootSubvol = {
     description = "Wipe btrfs root subvolume";
