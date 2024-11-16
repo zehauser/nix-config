@@ -12,7 +12,7 @@
 
       darwinConfigurations = {
         Noctua = macosSystem "Noctua";
-        Ciconia = macosSystem "Ciconia";
+        Columba = macosSystem "Columba";
       };
     };
 
