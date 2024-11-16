@@ -1,4 +1,5 @@
 {
+  config,
   helpers,
   lib,
   osConfig,
@@ -6,10 +7,10 @@
 }:
 {
   sops = {
-    defaultSopsFile = helpers.flakeRoot + /secrets/zhauser.yaml;
+    defaultSopsFile = helpers.flakeRoot + /secrets/${config.home.username}.yaml;
     age.keyFile = lib.mkMerge [
-      (helpers.mkIfNixos osConfig.sops.secrets."home_manager_sops_keys/zhauser".path)
-      (helpers.mkIfMacos "/Users/zhauser/.secrets/sops-age-key-zhauser")
+      (helpers.mkIfNixos osConfig.sops.secrets."home_manager_sops_keys/${config.home.username}".path)
+      (helpers.mkIfMacos "${config.home.homeDirectory}/.secrets/sops-age-key-${config.home.username}")
     ];
   };
 }

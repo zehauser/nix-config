@@ -14,7 +14,7 @@ let
       set timeout 2
       set password [exec ${pkgs.coreutils}/bin/cat ${config.sops.secrets.atuin_password.path}]
 
-      spawn ${pkgs.atuin}/bin/atuin login -u zhauser
+      spawn ${pkgs.atuin}/bin/atuin login -u ${config.home.username}
 
       expect {
         "You are already logged in!" {

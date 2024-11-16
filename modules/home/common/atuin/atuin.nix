@@ -13,7 +13,7 @@
     };
   };
 
-  programs.atuin.settings.db_path = helpers.mkIfNixos "/home/zhauser/.persistent/atuin-history.db";
+  programs.atuin.settings.db_path = helpers.mkIfNixos "${config.home.homeDirectory}/.persistent/atuin-history.db";
 
   sops.secrets.atuin_key = { };
 }

@@ -7,7 +7,7 @@
       type = listOf str;
     };
 
-  config.home.persistence."/persistent/bind-mounted/home/zhauser" = {
+  config.home.persistence."/persistent/bind-mounted/${config.home.homeDirectory}" = {
     directories = [ ".persistent" ] ++ config.modules.impermanence.directories;
     allowOther = true;
   };
