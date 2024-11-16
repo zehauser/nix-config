@@ -22,5 +22,8 @@ helpers.mkCrossPlatformModule {
 
   macos-only = {
     services.nix-daemon.enable = true;
+    nix.linux-builder.enable = true;
+    nix.linux-builder.maxJobs = 8;
+    nix.settings.keep-outputs = true;
   };
 }
