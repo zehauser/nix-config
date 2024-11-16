@@ -13,7 +13,6 @@ with pkgs;
     "${vscode}/Applications/Visual Studio Code.app"
   ];
 
-  homebrew.enable = true;
   homebrew.casks = [
     "fantastical"
     "obsidian"
