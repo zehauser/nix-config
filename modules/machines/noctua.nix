@@ -4,6 +4,8 @@
 # My personal laptop and primary development machine.
 ###########
 {
+  home-manager.users.zhauser.modules.borg.enable = true;
+
   home-manager.users.zhauser.programs.fish = {
     shellAliases.darwin-rebuild = "darwin-rebuild --flake /Users/zhauser/code/nix-config";
     functions.nixos-rebuild = {

@@ -25,6 +25,8 @@
   environment.systemPackages = with pkgs; [ slack ];
   system.defaults.dock.persistent-apps = with pkgs; [ "${slack}/Applications/Slack.app" ];
 
+  home-manager.users.zhauser.modules.borg.enable = true;
+
   home-manager.users.zhauser.programs.git.includes = [
     {
       condition = "gitdir:~/code/grammarly/";

@@ -7,6 +7,7 @@
 let
   packages = with pkgs; {
     common = [
+      borgmatic
       cloc
       fd
       file
