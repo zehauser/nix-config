@@ -13,12 +13,19 @@ let
       file
       jq
       nixfmt-rfc-style
+      python312
+      python312Packages.ipython
       ripgrep
       screen
       socat
     ];
     mac = [
       borgbackup
+      ckan
+      cowsay
+      go_1_23
+      minicom
+      mosh
       nixos-rebuild
       sops
     ];

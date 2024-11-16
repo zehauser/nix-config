@@ -37,7 +37,7 @@
         branch.sort = "-committerdate";
         tag.sort = "taggerdate";
         merge.conflictstyle = "zdiff3";
-        commit.verbose = true;
+        commit.verbose = false;
         rerere.enabled = true;
         help.autocorrect = "prompt";
         transfer.fsckobjects = true;

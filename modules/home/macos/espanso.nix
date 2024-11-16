@@ -3,7 +3,7 @@
     enable = true;
     configs = {
       default = {
-        search_shortcut = "ALT+CTRL+SPACE";
+        search_shortcut = "ALT+CTRL+SHIFT+SPACE";
       };
     };
     matches = {
@@ -28,6 +28,26 @@
           {
             trigger = ":smile";
             replace = "🙂";
+          }
+          {
+            trigger = ":p0";
+            replace = "⚫️";
+          }
+          {
+            trigger = ":p1";
+            replace = "🔴";
+          }
+          {
+            trigger = ":p2";
+            replace = "🟠";
+          }
+          {
+            trigger = ":p3";
+            replace = "🟡";
+          }
+          {
+            trigger = ":p4";
+            replace = "🟢";
           }
         ];
         global_vars = [
