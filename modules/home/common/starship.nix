@@ -21,6 +21,7 @@
 
       shlvl = {
         disabled = false;
+        symbol = "↕️";
       };
 
       status.disabled = false;

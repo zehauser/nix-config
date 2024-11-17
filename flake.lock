@@ -175,6 +175,26 @@
         "type": "github"
       }
     },
+    "ghostty": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs-macos"
+        ]
+      },
+      "locked": {
+        "lastModified": 1731979194,
+        "narHash": "sha256-RUbyUOSxmd73gAILIYVTLLQnySr4hgAVeH/ghVuolio=",
+        "ref": "refs/heads/main",
+        "rev": "62cb5e97fbb84a5834c91a329d0d5139b2f2e520",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@github.com/zehauser/ghostty"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/zehauser/ghostty"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -474,6 +494,7 @@
     "root": {
       "inputs": {
         "argon-fan-manager": "argon-fan-manager",
+        "ghostty": "ghostty",
         "home-manager": "home-manager",
         "homebrew-bundle": "homebrew-bundle",
         "homebrew-cask": "homebrew-cask",

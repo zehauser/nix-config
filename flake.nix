@@ -49,6 +49,10 @@
       url = "github:homebrew/homebrew-core";
       flake = false;
     };
+    ghostty = {
+      url = "git+ssh://git@github.com/zehauser/ghostty";
+      inputs.nixpkgs.follows = "nixpkgs-macos";
+    };
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs-macos";
