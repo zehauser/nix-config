@@ -4,7 +4,7 @@
 
   fonts.packages = with pkgs; [
     roboto
-    (nerdfonts.override { fonts = [ "Hack" ]; })
+    nerd-fonts.hack
   ];
 
   homebrew.brews = [ "switchaudio-osx" ];

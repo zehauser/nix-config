@@ -1,6 +1,8 @@
+{ inputs, ... }:
 {
   services.espanso = {
     enable = true;
+    package = inputs.nixpkgs-macos-stable.legacyPackages.aarch64-darwin.espanso;
     configs = {
       default = {
         search_shortcut = "ALT+CTRL+SHIFT+SPACE";

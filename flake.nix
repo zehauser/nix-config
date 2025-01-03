@@ -26,6 +26,9 @@
     nixpkgs-nixos.url = "nixpkgs/nixos-unstable";
     nixpkgs-macos.url = "nixpkgs/nixpkgs-unstable";
 
+    # temporary, for espanso, due to: github.com/NixOS/nixpkgs/issues/368673
+    nixpkgs-macos-stable.url = "nixpkgs/24f0d4acd634792badd6470134c387a3b039dace";
+
     # MacOS + NixOS
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -48,10 +51,6 @@
     homebrew-core = {
       url = "github:homebrew/homebrew-core";
       flake = false;
-    };
-    ghostty = {
-      url = "git+ssh://git@github.com/zehauser/ghostty";
-      inputs.nixpkgs.follows = "nixpkgs-macos";
     };
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
