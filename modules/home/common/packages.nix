@@ -20,6 +20,7 @@ let
       socat
     ];
     mac = [
+      _1password-cli
       borgbackup
       ckan
       cowsay

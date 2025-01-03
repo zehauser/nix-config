@@ -71,6 +71,7 @@ with pkgs;
         "/Applications/KeepingYouAwake.app"
         "/Applications/Lunar.app"
         "/Applications/Nix Trampolines/Rectangle.app"
+        "/Applications/One Thing.app"
       ];
     in
     lib.strings.concatLines (

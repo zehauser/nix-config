@@ -30,6 +30,10 @@
             replace = "🙂";
           }
           {
+            trigger = ":tornado";
+            replace = "🌪️";
+          }
+          {
             trigger = ":p0";
             replace = "⚫️";
           }
